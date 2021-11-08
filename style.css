@@ -1,0 +1,43 @@
+* body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #dddddd;
+}
+header{
+    height: 40px;
+    background-color: white;
+}
+.barranav{
+    height: 40px;
+    background-color: #29b1dd;
+}
+.container header nav{
+    width: 90%;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-width: 150px;
+    height: 120px;
+    background-color:rgb(245, 245, 245);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.icona {
+    color: #000;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+}
