@@ -148,7 +148,10 @@ console.log(newElement);
 container.innerHTML += newElement;
 }); 
 
+/* da qui in poi parte di bonus
+document.querySelector("select").addEventListener("change",
+function(){
 
 
-
+}); */
 
