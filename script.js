@@ -11,7 +11,7 @@ Come possiamo usare i dati presenti nella nostra struttura dati per creare l’e
 Inizialmente può essere sufficiente stampare dei semplici div, senza alcuno stile, con all’interno l’icona e uno span con il nome.
 Solamente quando la parte logica è completa, ci dedichiamo al dettaglio del css. */
 
-const arrIconns = [
+const arrIcons = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -130,10 +130,9 @@ const container = document.querySelector("contenitore");
 
 let newElement = "";
 
+arrIcons.forEach((element) => {
 
-
-arrIconns.forEach((element) => {
-    newElement += 
+newElement += 
     `<div class="square">
         <div class="icona">
             <i class="${element.family} ${element.prefix}${element.name}${element.color}"></i> 
@@ -141,20 +140,17 @@ arrIconns.forEach((element) => {
         </div>
      </div>
     `
+   
 console.log(newElement);
+arrIcons.innerHTML += newElement;
+}); 
 
-});
-
-
-  
-/* arrPrincipale.innerHTML += `
-    <div class="container">
-    <div class="square">
-        <div class="icona">
-          <i class="${prefix}${family}${name}"></i> 
-            <p ${name}</p>
-        </div>
+/* for(let i = 0; i < arrIcons.length; i++) {
+newElement.innerHTML +=
+`<div class="square">
+    <div class="icona">
+        <i class="${family} ${prefix}${name}${color}"></i> 
+        <span ${name} </span>
     </div>
-    </div>`
-;
- */
+</div>`
+}  */
