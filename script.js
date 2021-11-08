@@ -125,32 +125,30 @@ const arrIcons = [
 		color: 'blue'
 	}
 ];
+//creo una var per richiamare il container dall'html
+let container = document.querySelector(".contenitore");
 
-const container = document.querySelector("contenitore");
-
+//creo un elemento vuoto che poi andrò a richiamare per l'innerhtml
 let newElement = "";
 
 arrIcons.forEach((element) => {
 
-newElement += 
+newElement = 
     `<div class="square">
         <div class="icona">
-            <i class="${element.family} ${element.prefix}${element.name}${element.color}"></i> 
-            <span ${element.name} </span>
+        
+            <i class="${element.family} ${element.prefix}${element.name} ${element.color}"></i> 
+            <span> ${element.name} </span>
         </div>
      </div>
     `
    
 console.log(newElement);
-arrIcons.innerHTML += newElement;
+
+container.innerHTML += newElement;
 }); 
 
-/* for(let i = 0; i < arrIcons.length; i++) {
-newElement.innerHTML +=
-`<div class="square">
-    <div class="icona">
-        <i class="${family} ${prefix}${name}${color}"></i> 
-        <span ${name} </span>
-    </div>
-</div>`
-}  */
+
+
+
+
